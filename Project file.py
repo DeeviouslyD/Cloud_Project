@@ -1,5 +1,10 @@
+from flask import Flask
 from datetime import datetime, time
 from time import sleep
+
+app = Flask(__name__)
+
+@app.route("/")
 
 def dateDiffInSeconds(date1, date2):
   timedelta = date2 - date1
